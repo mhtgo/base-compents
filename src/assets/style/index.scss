@@ -1,0 +1,250 @@
+@import "./ml";
+@import "./mt";
+@import "./mb";
+@import './transition.scss';
+
+body {
+    background-color: #f3f3f3;
+}
+
+blockquote, body, dd, dl, dt, fieldset, figure, h1, h2, h3, h4, h5, h6, hr, html, iframe, legend, li, ol, p, pre, textarea, ul { margin: 0; padding: 0 }
+
+span {
+    font-size: 14px;
+}
+
+a {
+    cursor: pointer;
+}
+
+li{
+    list-style: none;
+}
+.clear {
+    clear: both;
+}
+.danger {
+    color: #F56C6C;
+}
+
+.el-table .cell {
+    font-size: 14px;
+}
+
+
+.el-table--border th {
+    color: #333;
+    background: #ecf0fd;
+    border-right: 1px solid #ddd;
+    font-weight: 100;
+}
+
+.el-table {
+    .el-radio__label {
+        display: none;
+    }
+}
+
+.el-table .warning-row {
+    background: #f8d7d1;
+}
+
+.el-form-item {
+    .el-select {
+        width: 188px;
+    }
+    .el-date-editor {
+        width: 188px;
+    }
+    .el-autocomplete {
+        width: 188px;
+    }
+}
+
+.el-input-number.is-without-controls .el-input__inner{
+    text-align: left;
+}
+
+.flexCenter {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .el-form-item__content {
+        width: 100%;
+    }
+}
+
+.el-form-item.is-success .el-input__inner,
+.el-form-item.is-success .el-input__inner:focus,
+.el-form-item.is-success .el-textarea__inner,
+.el-form-item.is-success .el-textarea__inner:focus {
+    border: 1px solid #d8dce5 !important;
+}
+
+.customFormWidth {
+    width: 100%;
+    .el-form-item__content {
+        width: 60%;
+    }
+}
+
+.customFormBankWidth {
+    width: 100%;
+    .el-form-item__content {
+        width: 80%;
+    }
+}
+
+.form-checkbox{
+    display: flex;
+    flex-wrap: wrap;
+    .el-form-item__content{
+        width: 600px;
+    }
+    .el-checkbox{
+        margin-right: 30px;
+        margin-left: 0;
+    }
+}
+
+
+.el-input__suffix .el-icon-error {
+    cursor: pointer;
+}
+
+.el-card__header{
+    background-color: #ecf0fd;
+}
+.card-btn{
+    border: 1px solid blue;
+    color: blue;
+}
+
+.el-dropdown{
+  cursor: pointer;
+}
+
+.el-table--border th{
+  background: #fafafa !important;
+}
+.el-table--border tr th {
+  color: rgba(0,0,0,.85);
+  font-weight: 500;
+  padding: 16px 0;
+}
+
+.text-btn{
+  color: #409EFF;
+  font-size: 14px;
+  cursor: pointer;
+  // font-weight: 500;
+  border: none;
+  background: transparent;
+  outline: none;
+  &:hover{
+    color: #66b1ff;
+  }
+  &.disabled{
+    cursor: not-allowed;
+    color: #c0c4cc;
+  }
+}
+
+.page-title{
+  margin-bottom: 16px;
+  font-size: 20px;
+  font-weight: 500;
+  color: rgba(0,0,0,.85);
+}
+
+.desc-list{
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  .header{
+    color: rgba(0,0,0,.85);
+    font-weight: 500;
+    margin-bottom: 16px;
+    font-size: 16px;
+  }
+  .term{
+    line-height: 20px;
+    padding-bottom: 12px;
+    margin-right: 8px;
+    color: rgba(0,0,0,.85);
+    white-space: nowrap;
+    display: table-cell;
+    font-size: 14px;
+    &:after{
+      content: ":";
+      margin: 0 8px 0 2px;
+      position: relative;
+      top: -.5px;
+    }
+  }
+  .detail{
+    line-height: 22px;
+    width: 100%;
+    padding-bottom: 16px;
+    color: rgba(0,0,0,.65);
+    display: table-cell;
+    font-size: 14px;
+  }
+}
+
+.divider{
+  margin-top: 12px;
+  display: block;
+  height: 1px;
+  width: 100%;
+  clear: both;
+  background: #e8e8e8;
+}
+
+.handle ul li {
+    cursor: pointer;
+}
+
+/*.handle ul li:hover {*/
+/*background-color: #f9f9f9;*/
+/*}*/
+/*点击新增,修改图标为 点击新增 icon-xinzengdianji*/
+.handle ul li:active .icon-xinzeng:before {
+    content: "\e656";
+}
+
+/*点击chaxun,修改图标为 点击查询 icon-chaxundianji*/
+.handle ul li:active .icon-chaxun:before {
+    content: "\e637";
+}
+
+.handle ul li:active .icon-xitong:before {
+    content: "\e65e";
+}
+
+.handle ul li:active .icon-denglu:before {
+    content: "\e639";
+}
+
+.handle ul li:active .icon-jiekou:before {
+    content: "\e646";
+}
+
+.handle ul li:active .icon-yewu:before {
+    content: "\e65b";
+}
+.handle ul li:active .icon-fajian:before {
+    content: "\e645";
+}
+
+.table-width-100{
+    width: 100px;
+}
+.form-input-width{
+    width: 900px;
+    padding-left: 35px;
+}
+//.table-input-width{
+//    .cell{
+//        width: 120px;
+//    }
+//}
